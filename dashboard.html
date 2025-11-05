@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Dashboard — Book Online</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="brand">
+        <img src="img/logobo.png" alt="logo" />
+        <h1>Book Online</h1>
+      </div>
+      <nav class="nav">
+        <button class="btn" data-nav="stok.html">Katalog</button>
+        <button class="btn" data-nav="tracking.html">Tracking</button>
+        <button class="btn" data-nav="checkout.html">Checkout</button>
+        <button id="logout" class="btn ghost">Logout</button>
+      </nav>
+    </header>
+    <main class="container">
+      <div class="card">
+        <h2 id="greeting">Selamat datang</h2>
+        <p class="meta">Pilih menu untuk mulai mengelola pemesanan buku.</p>
+        <div style="margin-top: 12px" class="row">
+          <button class="btn" data-nav="stok.html">Lihat Stok / Katalog</button>
+          <button class="btn" data-nav="checkout.html">Checkout</button>
+          <button class="btn" data-nav="tracking.html">Tracking</button>
+        </div>
+      </div>
+
+      <div style="margin-top: 18px" class="grid">
+        <div class="card">
+          <h3>Ringkasan Katalog</h3>
+          <div id="catalogWrap" class="catalog" style="margin-top: 12px"></div>
+        </div>
+        <aside>
+          <div id="cartPreview"></div>
+          <div class="card" style="margin-top: 12px">
+            <h4>Menu Cepat</h4>
+            <div style="display: flex; flex-direction: column; gap: 8px">
+              <button class="btn" onclick="location.href='stok.html'">
+                Kelola Stok
+              </button>
+              <button class="btn ghost" onclick="location.href='login.html'">
+                Akun
+              </button>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

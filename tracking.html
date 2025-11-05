@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tracking — Book Online</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="brand">
+        <img src="img/logobo.png" alt="logo" />
+        <h1>Book Online</h1>
+      </div>
+      <nav class="nav">
+        <button class="btn" onclick="location.href='dashboard.html'">
+          Dashboard
+        </button>
+        <button class="btn" onclick="location.href='stok.html'">Katalog</button>
+      </nav>
+    </header>
+    <main class="container">
+      <div class="card">
+        <h2>Tracking Pengiriman</h2>
+        <form id="trackingForm" class="form">
+          <input
+            name="no"
+            class="input"
+            placeholder="Masukkan Nomor Delivery Order (contoh 20230012)"
+          />
+          <div style="margin-top: 8px">
+            <button class="btn" type="submit">Cari</button>
+          </div>
+        </form>
+      </div>
+      <div style="margin-top: 12px" id="trackResult"></div>
+    </main>
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

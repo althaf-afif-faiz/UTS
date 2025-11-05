@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Book Online — Login</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="brand">
+        <img src="img/logobo.png" alt="logo" />
+        <h1>Book Online</h1>
+      </div>
+      <nav class="nav">
+        <button class="btn" onclick="location.href='dashboard.html'">
+          Dashboard
+        </button>
+      </nav>
+    </header>
+    <main class="container">
+      <div class="card" style="max-width: 520px; margin: 0 auto">
+        <h2>Masuk ke Book Online</h2>
+        <form id="loginForm" class="form">
+          <label
+            >Email <input name="email" type="email" class="input" required
+          /></label>
+          <label
+            >Password
+            <input name="password" type="password" class="input" required
+          /></label>
+          <div style="display: flex; gap: 8px">
+            <button class="btn" type="submit">Login</button>
+            <button type="button" id="openForgot" class="btn ghost">
+              Lupa Password
+            </button>
+            <button type="button" id="openRegister" class="btn ghost">
+              Daftar
+            </button>
+          </div>
+        </form>
+        <p class="footer">Gunakan akun yang ada pada data.js untuk testing.</p>
+      </div>
+    </main>
+
+    <div id="modalForgot" class="modal-backdrop">
+      <div class="modal">
+        <h3>Lupa Password</h3>
+        <p>Masukkan email anda untuk menerima instruksi (simulasi).</p>
+        <div class="row">
+          <input class="input" placeholder="email@contoh.com" />
+        </div>
+        <div class="row" style="justify-content: flex-end; margin-top: 12px">
+          <button class="btn closeModal">Tutup</button>
+          <button class="btn" onclick="alert('Instruksi dikirim (simulasi)')">
+            Kirim
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="modalRegister" class="modal-backdrop">
+      <div class="modal">
+        <h3>Daftar Akun</h3>
+        <p>Form pendaftaran (simulasi).</p>
+        <div class="form">
+          <input class="input" placeholder="Nama lengkap" />
+          <input class="input" placeholder="Email" />
+          <input class="input" placeholder="Password" />
+          <div class="row" style="justify-content: flex-end">
+            <button class="btn closeModal">Batal</button>
+            <button class="btn" onclick="alert('Daftar (simulasi)')">
+              Daftar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
