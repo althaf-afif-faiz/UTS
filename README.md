@@ -6,6 +6,9 @@
 
 # Book Online Project
 
+## Link Vidio YouTube :
+https://youtu.be/Y8F8-ZqiAvQ 
+
 ## 1. Deskripsi Proyek
 **Book Online Project** adalah sebuah aplikasi berbasis web yang dirancang untuk melakukan pemesanan buku secara online.  
 Proyek ini dikembangkan menggunakan **HTML**, **CSS**, dan **JavaScript** tanpa backend database, dengan tujuan memberikan simulasi sistem e-commerce sederhana.  
