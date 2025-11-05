@@ -4,9 +4,6 @@
 ## NIM : 312410404
 ## Kelas : TI.24.A.3
 
-# File Program :
-
-
 # Book Online Project
 
 ## 1. Deskripsi Proyek
